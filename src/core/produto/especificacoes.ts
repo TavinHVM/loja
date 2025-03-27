@@ -1,3 +1,3 @@
 export default interface Especificacoes {
-    [chave: string]: string;
+    [chave: string]: string | number | boolean;
 }
