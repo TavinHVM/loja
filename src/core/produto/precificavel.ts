@@ -1,3 +1,4 @@
+
 export interface Precificavel {
     precobase: number;
     precopromocional: number;
