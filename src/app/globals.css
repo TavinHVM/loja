@@ -5,7 +5,11 @@
   --foreground: #171717;
 }
 
+<<<<<<< HEAD
 :root {
+=======
+:root inline {
+>>>>>>> 92e80c324b285f190f063a32c53f7a68efda9c77
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
