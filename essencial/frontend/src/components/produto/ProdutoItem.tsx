@@ -12,7 +12,7 @@ export default function ProdutoItem(props: ProdutoItemProps) {
     return (
         <Link
             href={`/produto/${produto.id}`}
-            className="flex flex-col text-with-light-background relative max-w-[250px]" // Nova classe aplicada
+            className="flex flex-col text-with-light-background relative max-w-[250px]"
         >
             <div>
                 <img

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <div className="flex gap-5 flex-wrap">
+   <div className="grid grid-cols-4 gap-5 container">
       {produtos.map((produto) => (
         <ProdutoItem key={produto.id} produto={produto} />
       ))}

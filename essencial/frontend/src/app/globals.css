@@ -51,3 +51,9 @@ body {
   color:#FFD700;
   opacity: 85%;
 }
+
+@layer components {
+  .container{
+    @apply max-w-7xl mx-auto px-10 sm:px-6 lg:px-4;
+  }
+}
