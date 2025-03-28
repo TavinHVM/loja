@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
+  --background: #1C1C1E;
   --foreground: #171717;
+  --border-text: #F5F7FA; /* Cor para borda do texto */
 }
 
-:root {
 :root inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #121212;
     --foreground: #ffffff;
   }
 }
@@ -24,5 +24,30 @@ body {
   background: var(--background);
   color: white;
   font-family: Montserrat;
-  }
+}
+
+/* Exemplo de uso da borda no texto */
+.text-with-border {
+  color: var(--foreground);
+  text-shadow: 1px 1px 2px var(--border-text);
+}
+
+.text-with-background {
+  background: var(--border-text); /* Cor de fundo do texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-with-light-background {
+  background: #3b3b3b; /* Fundo mais claro com opacidade */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borda branca com opacidade de 10% */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 4px 8px; /* Espaçamento interno opcional */
+  color: var(--foreground); /* Cor do texto */
+}
+
+.destaque {
+  color:#FFD700;
+  opacity: 85%;
 }
