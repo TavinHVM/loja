@@ -8,8 +8,8 @@ const font = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Loja",
-  description: "um breve resumo de um site de vendas",
+  title: "GynTech",
+  description: "um site de vendas de produtos eletrônicos",
 };
 
 export default function RootLayout({
