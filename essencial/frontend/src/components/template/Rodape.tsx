@@ -7,13 +7,11 @@ export default function Rodape() {
             <div className="container flex flex-col py-10 gap-10">
                 <div className="flex flex-col md:flex-row items"></div>
             </div>
-            <div>
-                <div>
-                    <IconBrandYoutube size={28} stroke={1} className="text-red-600" />
+            <div className="container flex flex-col md:flex-row items-center justify-between py-10 gap-10">
+                 <IconBrandYoutube size={28} stroke={1} className="text-red-600" />
                     <IconBrandInstagram size={28} stroke={1} className="text-pink-400" />
                     <IconBrandFacebook size={28} stroke={1} className="text-blue-600" />
                     <IconBrandLinkedin size={28} stroke={1} className="text-blue-400" />
-                </div>
             </div>
         </footer>
     )
