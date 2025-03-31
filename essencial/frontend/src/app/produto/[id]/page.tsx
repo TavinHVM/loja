@@ -1,6 +1,7 @@
 'use client'
 import { produtos } from '@/core'
 import useProdutos from '@/data/hooks/useProdutos'
+
 export default function PaginaProduto(props: any) {
     const { produtos } = useProdutos()
 

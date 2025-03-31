@@ -6,10 +6,10 @@ import Image from "next/image";
 export default function Home() {
   const { produtos } = useProdutos()
   return (
-   <div className="grid grid-cols-4 gap-5 container">
-      {produtos.map((produto) => (
-        <ProdutoItem key={produto.id} produto={produto} />
-      ))}
-   </div>
-  );
+      <div className="grid grid-cols-4 gap-5 container">
+        {produtos.map((produto) => (
+            <ProdutoItem key={produto.id} produto={produto} />
+        ))}
+      </div>
+  )
 }
