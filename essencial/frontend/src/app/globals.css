@@ -21,6 +21,8 @@
 }
 
 body {
+  margin: 0; /* Remove margens do corpo */
+  padding: 0; /* Remove paddings do corpo */
   background: var(--background);
   color: white;
   font-family: Montserrat;
