@@ -7,7 +7,7 @@ export interface IconeCarrinhoProps {
 
 export default function IconeCarrinho(props: IconeCarrinhoProps) {
     return (
-        <div className="relative flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full">
+        <div className="relative flex items-center justify-center w-10 h-10 bg-black-500 rounded-full">
             <IconShoppingCart size={30} color="#FFFF" />
             {props.qtdItens > 0 && (
                 <div className="
