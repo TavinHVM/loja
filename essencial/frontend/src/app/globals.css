@@ -42,7 +42,7 @@ body {
 }
 
 .text-with-light-background {
-  background: #2b2b2b; /* fundo mais claro com opacidade */
+  background: #1a1a1a; /* fundo mais claro com opacidade */
   border: 1px solid rgba(255, 255, 255, 0.1); /* borda branca com opacidade de 10% */
   border-radius: 8px; /* bordas arredondadas */
   padding: 4px 8px; /* espaçamento interno opcional */

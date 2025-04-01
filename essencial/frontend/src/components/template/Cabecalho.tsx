@@ -7,15 +7,18 @@ export default function Cabecalho() {
         <div
             className="flex flex-col h-16 top-0 left-0 w-full z-50"
             style={{
-                background: "linear-gradient(90deg, #14002D, 100%)",
+                background: "linear-gradient(to top, #000000, #141414)",
                 margin: 0,
+                width: "100vw",
+                height: "120px",
             }}
         >
-            <div className="flex-1 container flex flex-col justify-center"
-            style={{
-                padding: "20px 20px 10px 20px", // Adicionado padding-bottom
-                borderBottom: "1px solid rgba(255, 255, 255, 0.5)"
-            }}>
+            <div
+                className="flex-1 container flex flex-col justify-center"
+                style={{
+                    padding: "20px 20px 10px 20px",
+                }}
+            >
                 <div className="flex justify-between items-center">
                     <Logo />
                     <Link href="">
@@ -23,6 +26,7 @@ export default function Cabecalho() {
                     </Link>
                 </div>
             </div>
+            <div className="h-px bg-gradient-to-r from-neutral-800 via-neutral-500 to-neutral-800"></div>
         </div>
     );
 }
