@@ -3,7 +3,7 @@
 :root {
   --background: #4e4e52;
   --foreground: #171717;
-  --border-text: #F5F7FA; /* Cor para borda do texto */
+  --border-text: #F5F7FA; /* cor para borda do texto */
 }
 
 :root inline {
@@ -15,38 +15,38 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0c0e0f;
+    --background: #1c1c1c; /* cor de fundo do site */
     --foreground: #ffffff;
   }
 }
 
 body {
-  margin: 0; /* Remove margens do corpo */
-  padding: 0; /* Remove paddings do corpo */
+  margin: 0; /* remove margens do corpo */
+  padding: 0; /* remove paddings do corpo */
   background: var(--background);
   color: white;
   font-family: Montserrat;
 }
 
-/* Exemplo de uso da borda no texto */
+/* exemplo de uso da borda no texto */
 .text-with-border {
   color: var(--foreground);
   text-shadow: 1px 1px 2px var(--border-text);
 }
 
 .text-with-background {
-  background: var(--border-text); /* Cor de fundo do texto */
+  background: var(--border-text); /* cor de fundo do texto */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .text-with-light-background {
-  background: #3b3b3b; /* Fundo mais claro com opacidade */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Borda branca com opacidade de 10% */
-  border-radius: 8px; /* Bordas arredondadas */
-  padding: 4px 8px; /* Espaçamento interno opcional */
-  color: var(--foreground); /* Cor do texto */
+  background: #2b2b2b; /* fundo mais claro com opacidade */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* borda branca com opacidade de 10% */
+  border-radius: 8px; /* bordas arredondadas */
+  padding: 4px 8px; /* espaçamento interno opcional */
+  color: var(--foreground); /* cor do texto */
 }
 
 .destaque {
@@ -58,4 +58,8 @@ body {
   .container{
     @apply max-w-7xl mx-auto px-10 sm:px-6 lg:px-4;
   }
+}
+
+.bege {
+  color: #E6E1CF;
 }

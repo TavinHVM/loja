@@ -24,22 +24,34 @@ export default function ProdutoItem(props: ProdutoItemProps) {
                 />
             </div>
             <div className="flex-1 flex flex-col">
-                <span className="text-lg font-semibold p-5 border-t">
+                <span className="text-lg font-semibold p-5 border-t col bege">
                     {props.produto.nome}
                 </span>
-                <span className="text-sm border-b border-dashed self-start gap-3">
+                <span className="text-sm border-b border-dashed self-start gap-3 text-amber-50">
                     {props.produto.especificacoes.destaque}
                 </span>
                 <div className="flex-1"></div>
                 <div className="flex flex-col">
                     <span>
-                        <span className="text-sm font-medium line-through">De: R${produto.precobase}</span><br></br>
-                        <span className="text-lg font-bold col destaque">Por: R${produto.precopromocional}</span>
+                        <span className="text-sm font-medium line-through text-amber-50">De: R${produto.precobase}</span><br></br>
+                        <span className="text-lg font-bold col destaque text-amber-50">Por: R${produto.precopromocional}</span>
                     </span>
                 </div>
-                <button className="bg-green-600/70 text-white rounded-lg p-2 mt-2 gap-1 flex items-center justify-center hover:bg-green-600 transition duration-180 ease-in-out">
-                    <IconShoppingCart size={20}/>
-                    <span className="font-semibold">Adicionar ao carrinho</span>
+                <button className="bg-[#cfb001] text-white rounded-lg p-2 mt-2 gap-1 flex items-center justify-center hover:bg-[#ffdc6a] transition duration-120 ease-in-out">
+                    <IconShoppingCart color="black"
+                        size={20}
+                        style={{
+                            textShadow: "0px 0px 3px black",
+                        }}
+                    />
+                    <span
+                        className="font-semibold"
+                        style={{
+                            textShadow: "0px 0px 3px black",
+                        }}
+                    >
+                        Adicionar ao carrinho
+                    </span>
                 </button>
             </div>
         </Link>
