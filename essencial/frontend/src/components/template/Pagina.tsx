@@ -14,6 +14,10 @@ export default function Pagina(props: any) {
                     backgroundAttachment: "fixed", // Fixa o background ao rolar a página
                 }}
             >
+                <div>
+                    
+                </div>
+                
                 <Cabecalho />
                 <main className="pt-16">{props.children}</main>
                 <Rodape />

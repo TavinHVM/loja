@@ -65,14 +65,14 @@ export default function Rodape() {
                 <div className="flex flex-col items-end">
                     <h3 className="text-lg font-extrabold text-amber-50">Contato</h3>
                     <div className="flex items-center gap-2 mt-2">
-                        <IconBrandWhatsapp size={20} className="text-amber-50 hover:text-amber-100" />
+                        <IconBrandWhatsapp size={20} className="text-green-500 text-amber-50 hover:text-amber-100" />
                         <a href="https://wa.me/5562995301725" target="_blank" className="text-sm text-amber-50 hover:text-amber-100">
                             WhatsApp
                         </a>
                     </div>
                     <div className="flex items-center gap-2 mt-2">
                         <IconMail size={20} className="text-amber-50 hover:text-amber-100" />
-                        <a href="mailto:gyntech@gmail.com" className="text-sm text-amber-50 hover:text-amber-100">
+                        <a href="mailto:gyntech@gmail.com" className="text-white-500text-sm text-amber-50 hover:text-amber-100">
                             gyntech@gmail.com
                         </a>
                     </div>
