@@ -1,20 +1,18 @@
 'use client'
 import { Produto, produtos } from '@/core'
 import useProdutos from '@/data/hooks/useProdutos'
+import { useParams } from 'next/navigation'
 import { use, useEffect, useState } from 'react'
 
 export default function PaginaProduto(props: any) {
     const { obterProdutoPorId } = useProdutos()
-    const [produtos, setProdutos] = useState<Produto| null>(null)
+    const [produto, setProduto] = useState<Produto | null>(null)
 
+    const params = useParams<{ id: string }>();
     useEffect(() => {
-        obterProdutoPorId(+props.params.id).then(setProdutos)
-    }, {props.params.id}) 
+        obterProdutoPorId(Number(params.id)).then(setProduto)
+    }, [params.id]) 
 
-
-
-
-    const id = +props.params.id
-    const produto = produtos.find((p) => p.id === id)
+    
     return produto ? <div>{produto?.nome}</div> : <div>Produto não encontrado</div>
 }

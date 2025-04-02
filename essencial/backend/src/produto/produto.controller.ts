@@ -19,9 +19,4 @@ async obterProdutoPorId(@Param('id') id: string): Promise<Produto | null> {
 
 
 
-  esperarSegundos(segundos: number): Promise<void> {
-    return new Promise((resolve) => {
-      setTimeout(resolve, segundos * 1000);
-    });
-  }
 }

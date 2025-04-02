@@ -7,14 +7,14 @@ const url = 'http://localhost:4000'
 export default function useProdutos(){
     const[produtos, setProdutos] = useState<Produto[]>([]);
 
-    async function obterProdutoPorId(id: number): Promise<Produto[]> {
-        const response = await fetch('${url}/produtos')
+    async function obterProdutos( ): Promise<Produto[]> {
+        const response = await fetch(`${url}/produtos`)
         const produtos = await response.json()
         return produtos ?? []
     }
 
-    async function obterProdutoPorId(id: number): Promise<Produto|null[]> {
-        const response = await fetch('${url}/produtos/${id}')
+    async function obterProdutoPorId(id: number): Promise<Produto|null> {
+        const response = await fetch(`${url}/produtos/${id}`)
         const produto = await response.json()
         return produto ?? null
     }
@@ -24,7 +24,7 @@ export default function useProdutos(){
     }, [])
     
     return{
-        produtos,
         obterProdutoPorId,
+        produtos,
     }
 }
