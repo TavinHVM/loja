@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { Produto, produtos } from 'src/core';
 
 @Controller('produtos')
@@ -10,6 +10,14 @@ export class ProdutoController {
       especificacoes: { destaque: produto.especificacoes.destaque },
     }));
   }
+ @Get(':id')
+async obterProdutoPorId(@Param('id') id: string): Promise<Produto | null> {
+  const produtoId = Number(id); // Converte o id para número
+  const produto = produtos.find((produto) => produto.id === produtoId);
+  return produto ?? null;
+}
+
+
 
   esperarSegundos(segundos: number): Promise<void> {
     return new Promise((resolve) => {
