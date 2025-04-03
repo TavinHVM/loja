@@ -33,8 +33,8 @@ export default function ProdutoItem(props: ProdutoItemProps) {
                 <div className="flex-1"></div>
                 <div className="flex flex-col">
                     <span>
-                        <span className="text-sm font-medium line-through text-amber-50">De: R${produto.precobase}</span><br></br>
-                        <span className="text-lg font-bold col destaque text-amber-50">Por: R${produto.precopromocional}</span>
+                        <span className="text-sm font-medium line-through text-amber-50">De: R${produto.precoBase}</span><br></br>
+                        <span className="text-lg font-bold col destaque text-amber-50">Por: R${produto.precoPromocional}</span>
                     </span>
                 </div>
                 <button className="bg-[#cfb001] text-white rounded-lg p-2 mt-2 gap-1 flex items-center justify-center hover:bg-[#ffdc6a] transition duration-120 ease-in-out">
