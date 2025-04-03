@@ -11,5 +11,5 @@ export default interface Produto extends Precificavel {
   nota: number;
   tags: string[];
   preco: number;
-  especificacoes: Especificacoes; // Especificacoes é uma interface
+  especificacoes: Especificacoes;
 }
