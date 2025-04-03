@@ -1,22 +1,18 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { Produto, produtos } from 'src/core';
+import { Produto } from 'src/core';
+import { ProdutoPrisma } from './produto.prisma';
 
 @Controller('produtos')
 export class ProdutoController {
+  constructor(readonly repo: ProdutoPrisma) {}
+
   @Get()
   async obterProdutos(): Promise<Produto[]> {
-    return produtos.map((produto) => ({
-      ...produto,
-      especificacoes: { destaque: produto.especificacoes.destaque },
-    }));
+    return this.repo.obter();
   }
- @Get(':id')
-async obterProdutoPorId(@Param('id') id: string): Promise<Produto | null> {
-  const produtoId = Number(id); // Converte o id para número
-  const produto = produtos.find((produto) => produto.id === produtoId);
-  return produto ?? null;
-}
 
-
-
+  @Get(':id')
+  async obterProdutoPorId(@Param('id') id: string): Promise<Produto | null> {
+    return this.repo.obterPorId(+id);
+  }
 }
