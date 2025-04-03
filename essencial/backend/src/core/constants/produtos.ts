@@ -12,7 +12,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=E4p3pXUe6mI',
     nota: 4.8,
     tags: ['smartphone', 'apple', 'iphone'],
-    preco: 6.999,
     especificacoes: {
       destaque: 'Tela Super Retina XDR de 6,1 polegadas e chip A15 Bionic.',
     },
@@ -33,7 +32,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=3xV1mJvwXok',
     nota: 4.7,
     tags: ['smartphone', 'samsung', 'android'],
-    preco: 5.999,
     especificacoes: {
       destaque: 'Processador Snapdragon 8 Gen 2 e câmera de 50 MP.',
     },
@@ -54,7 +52,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=8a2zv6srz3I',
     nota: 4.9,
     tags: ['fone de ouvido', 'sony', 'cancelamento de ruído'],
-    preco: 2.499,
     especificacoes: {
       destaque:
         'Cancelamento de ruído líder do mercado e bateria de até 30 horas.',
@@ -77,7 +74,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=J5pJb5KpLrE',
     nota: 4.6,
     tags: ['notebook', 'dell', 'ultrabook'],
-    preco: 10.999,
     especificacoes: {
       destaque: 'Tela InfinityEdge 4K e design ultrafino.',
     },
@@ -99,7 +95,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=5z1u5ZasqP4',
     nota: 4.8,
     tags: ['mouse', 'logitech', 'ergonômico'],
-    preco: 270,
     especificacoes: {
       destaque: 'Sensor de alta precisão e design ergonômico.',
     },
@@ -120,7 +115,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=RkC0l4iekYo',
     nota: 4.9,
     tags: ['console', 'sony', 'playstation'],
-    preco: 4.999,
     especificacoes: {
       destaque: 'Suporte a jogos em 4K, SSD ultrarrápido e controle DualSense.',
     },
@@ -141,7 +135,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=5iK6ixev8m8',
     nota: 4.8,
     tags: ['notebook', 'apple', 'macbook'],
-    preco: 12.999,
     especificacoes: {
       destaque:
         'Chip M2, tela Retina de 13,6 polegadas e bateria de longa duração.',
@@ -163,7 +156,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=Q9XJzR8z9yI',
     nota: 4.7,
     tags: ['mouse', 'razer', 'gamer'],
-    preco: 799,
     especificacoes: {
       destaque: 'Sensor óptico Focus Pro 30K DPI e design ultraleve de 63g.',
     },
@@ -185,7 +177,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=6C2jRzGd4sA',
     nota: 4.8,
     tags: ['monitor', 'samsung', 'gamer'],
-    preco: 3.499,
     especificacoes: {
       destaque: 'Tela QHD curvada, 240Hz e suporte a G-Sync/FreeSync.',
     },
@@ -206,7 +197,6 @@ const produtos: Produto[] = [
     videoReview: 'https://www.youtube.com/watch?v=3m5q8z1ZxKM',
     nota: 4.9,
     tags: ['headset', 'hyperx', 'gamer'],
-    preco: 1.499,
     especificacoes: {
       destaque: 'Bateria de até 300 horas e som surround virtual DTS.',
     },

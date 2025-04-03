@@ -8,7 +8,10 @@ async function seed() {
     console.log('Inserindo produtos...');
 
     await prisma.produto.createMany({
-      data: produtos,
+      data: produtos.map((produto) => ({
+        ...produto,
+        especificacoes: JSON.stringify(produto.especificacoes), // Serializa o campo especificacoes
+      })),
     });
 
     console.log('Seed executado com sucesso!');

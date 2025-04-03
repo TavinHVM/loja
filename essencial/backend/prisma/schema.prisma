@@ -25,6 +25,7 @@ model Produto {
   menorPreco       Float
   maiorPreco       Float
   precoMedio       Float
+  especificacoes   Json
 
   @@map("produtos")
 }

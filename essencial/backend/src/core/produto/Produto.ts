@@ -10,6 +10,5 @@ export default interface Produto extends Precificavel {
   videoReview: string;
   nota: number;
   tags: string[];
-  preco: number;
   especificacoes: Especificacoes;
 }

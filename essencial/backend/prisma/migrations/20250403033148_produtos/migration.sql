@@ -14,6 +14,7 @@ CREATE TABLE "produtos" (
     "menorPreco" DOUBLE PRECISION NOT NULL,
     "maiorPreco" DOUBLE PRECISION NOT NULL,
     "precoMedio" DOUBLE PRECISION NOT NULL,
+    "especificacoes" JSONB NOT NULL,
 
     CONSTRAINT "produtos_pkey" PRIMARY KEY ("id")
 );
