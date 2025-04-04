@@ -6,24 +6,13 @@ import { PrismaProvider } from 'src/db/prisma.provider';
 export class ProdutoPrisma {
   constructor(readonly prisma: PrismaProvider) {}
 
-  async salvar(produto: Produto): Promise<void> {
+  async salvar(produto: Partial<Produto>): Promise<void> {
     await this.prisma.produto.upsert({
-      where: { id: produto.id || 0 }, // Use 0 como fallback
+      where: { id: produto.id || 0 }, // Use 0 como fallback para evitar erro
       update: {
-        nome: produto.nome,
-        descricao: produto.descricao,
-        marca: produto.marca,
-        modelo: produto.modelo,
-        imagem: produto.imagem,
-        videoReview: produto.videoReview,
-        nota: produto.nota,
-        tags: produto.tags,
-        especificacoes: produto.especificacoes,
-      },
-      create: {
-        nome: produto.nome,
-        descricao: produto.descricao,
-        marca: produto.marca,
+        nome: produto.nome ?? '',
+        descricao: produto.descricao ?? '',
+        marca: produto.marca ?? '',
         modelo: produto.modelo,
         imagem: produto.imagem,
         videoReview: produto.videoReview,
@@ -35,6 +24,22 @@ export class ProdutoPrisma {
         menorPreco: produto.menorPreco,
         maiorPreco: produto.maiorPreco,
         precoMedio: produto.precoMedio,
+      },
+      create: {
+        nome: produto.nome ?? '',
+        descricao: produto.descricao ?? '',
+        marca: produto.marca ?? '',
+        modelo: produto.modelo ?? '',
+        imagem: produto.imagem ?? '',
+        videoReview: produto.videoReview ?? '',
+        nota: produto.nota ?? 0,
+        tags: produto.tags,
+        especificacoes: produto.especificacoes ?? '',
+        precoBase: produto.precoBase ?? 0,
+        precoPromocional: produto.precoPromocional ?? 0,
+        menorPreco: produto.menorPreco ?? 0,
+        maiorPreco: produto.maiorPreco ?? 0,
+        precoMedio: produto.precoMedio ?? 0,
       },
     });
   }

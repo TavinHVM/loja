@@ -7,8 +7,8 @@ export class ProdutoController {
   constructor(readonly repo: ProdutoPrisma) {}
 
   @Post()
-  async salvarProduto(@Body() produto: Produto): Promise<void> {
-    return this.repo.salvar(produto);
+  async salvarProduto(@Body() produto: Partial<Produto>): Promise<void> {
+    return this.repo.salvar(produto as Produto);
   }
 
   @Get()

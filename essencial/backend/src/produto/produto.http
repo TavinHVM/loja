@@ -1,13 +1,13 @@
 get http://localhost:4000/produtos
 
 ###
-get http://localhost:4000/produtos/6
+get http://localhost:4000/produtos/10
 
 ###
-DELETE http://localhost:4000/produtos/10
+DELETE http://localhost:4000/produtos/14
 
 ###
-POST http://localhost:4000/produtos
+POST http://localhost:4000/produtos/
 Content-Type: application/json
 
 {
