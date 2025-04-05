@@ -1,7 +1,6 @@
 'use client'
 import ProdutoItem from "@/components/produto/ProdutoItem";
 import useProdutos from "@/data/hooks/useProdutos";
-import Image from "next/image";
 
 export default function Home() {
   const { produtos } = useProdutos()

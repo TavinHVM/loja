@@ -1,6 +1,6 @@
 "use client";
-import { Produto, produtos } from "@gyntech/core";
-import { use, useEffect, useState } from "react";
+import { Produto } from "@gyntech/core";
+import { useEffect, useState } from "react";
 
 const url = "http://localhost:4000";
 

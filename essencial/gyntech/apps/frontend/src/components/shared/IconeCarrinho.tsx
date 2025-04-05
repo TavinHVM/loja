@@ -1,5 +1,4 @@
 import {IconShoppingCart} from "@tabler/icons-react";
-import { experimental_taintUniqueValue } from "react";
 
 export interface IconeCarrinhoProps {
     qtdItens: number;

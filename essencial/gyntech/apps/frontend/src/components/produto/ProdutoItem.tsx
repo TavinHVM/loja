@@ -2,6 +2,7 @@ import { Produto } from "@gyntech/core";
 import Link from "next/link";
 import '../../app/globals.css';
 import { IconShoppingCart } from "@tabler/icons-react";
+import Image from 'next/image';
 
 export interface ProdutoItemProps {
     produto: Produto;
@@ -15,7 +16,7 @@ export default function ProdutoItem(props: ProdutoItemProps) {
             className="flex flex-col text-with-light-background relative max-w-[250px]"
         >
             <div>
-                <img
+                <Image
                     src={produto.imagem}
                     alt={produto.nome}
                     width={350}
