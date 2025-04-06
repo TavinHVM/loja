@@ -2,7 +2,7 @@ import { Produto } from "@gyntech/core";
 import Link from "next/link";
 import '../../app/globals.css';
 import { IconShoppingCart } from "@tabler/icons-react";
-import Image from 'next/image';
+import Image from "next/image";
 
 export interface ProdutoItemProps {
     produto: Produto;
