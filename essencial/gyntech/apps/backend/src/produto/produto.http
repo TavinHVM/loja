@@ -1,0 +1,32 @@
+get http://localhost:4000/produtos
+
+###
+get http://localhost:4000/produtos/6
+
+###
+DELETE http://localhost:4000/produtos/10
+
+###
+POST http://localhost:4000/produtos
+Content-Type: application/json
+
+{
+  "nome": "HyperX Cloud Alpha Wireless",
+  "descricao": "Headset gamer sem fio com bateria de longa duração.",
+  "marca": "HyperX",
+  "modelo": "Cloud Alpha Wireless",
+  "imagem": "https://row.hyperx.com/cdn/shop/products/hyperx_cloud_alpha_black_1_main_900x.jpg?v=1662420668",
+  "nota": 4.9,
+  "videoReview": "https://www.youtube.com/watch?v=3m5q8z1ZxKM",
+  "tags": [
+    "headset",
+    "hyperx",
+    "gamer"
+  ],
+  "precoBase": 1.599,
+  "precoPromocional": 1.499,
+  "menorPreco": 1.499,
+  "maiorPreco": 1.599,
+  "precoMedio": 1.549,
+  "especificacoes": "{\"destaque\":\"Bateria de até 300 horas e som surround virtual DTS.\"}"
+}
