@@ -1,0 +1,29 @@
+[?9001h[?1004h[?25l[2J[m[H]0;npm[?25h]0;npm run build[?25l
+> frontend@0.1.0 build
+> next build[5;1H[?25h[K]0;C:\WINDOWS\system32\cmd.exe   [38;2;173;127;168m[1m▲ Next.js 14.2.14
+[m
+ [37m[1m [m Creating an optimized production build ...
+ [32m[1m✓[m Compiled successfully
+ [37m[1m [m Linting and checking validity of types  [36m.[?25l[m[K[182C [37m[1m [m Linting and checking validity of types  [36m..[m[K[182C [37m[1m [m Linting and checking validity of types  [36m...[m[K[182C [37m[1m [m Linting and checking validity of types  [36m.[m[K[182C [37m[1m [m Linting and checking validity of types  [36m..[m[K[182C [37m[1m [m Linting and checking validity of types  [36m...[m[K[182C [37m[1m [m Linting and checking validity of types  [36m.[m[K[182C [37m[1m [m Linting and checking validity of types  [36m..[m[K[182C [37m[1m [m Linting and checking validity of types  [36m...[m[K[182C[36m
+./src/app/(pagina)/produto/[id]/page.tsx[33m
+22[m:[33m8  [1mWarning[m: React Hook useEffect has a missing dependency: 'obterProdutoPorId'. Either include it or remove the dependency array.  [90m[1mreact-hooks/exhaustive-deps[36m[22m[13;1Hinfo  [m- Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+ [37m[1m [m Linting and checking validity of types  [36m.[m[K[182C [37m[1m [m Linting and checking validity of types  [36m..[m[K[182C [37m[1m [m Linting and checking validity of types  [36m...[m[K[182C [37m[1m [m Linting and checking validity of types  [36m.[m[K[182C [37m[1m [m Linting and checking validity of types  [36m..[m[K[182C [37m[1m [m Linting and checking validity of types  [36m...[m[K[182C [37m[1m [m Linting and checking validity of types  [36m.[m[K[182C [37m[1m [m Linting and checking validity of types  [36m..[m[K[182C [37m[1m [m Linting and checking validity of types  [36m...[m[K[182C [37m[1m [m Linting and checking validity of types  [36m.[m[K[182C [37m[1m [m Linting and checking validity of types  [36m..[m[K[182C [37m[1m [m Linting and checking validity of types  [36m...[m[K[182C [37m[1m [m Linting and checking validity of types  [36m.[m[K[182C [37m[1m [m Linting and checking validity of types  [36m..[m[K[182C [37m[1m [m Linting and checking validity of types  [36m...[m[K[182C [32m[1m✓[m Linting and checking validity of types    
+ [37m[1m [m Collecting page data  [36m.[m[K[182C [37m[1m [m Collecting page data  [36m..[m[K[182C [32m[1m✓[m Collecting page data    [?25h
+[?25l [37m[1m [m Generating static pages (0/5)  [36m[    ][m[K[182C [37m[1m [m Generating static pages (0/5)  [36m[=   ][m[K[182C [32m[1m✓[m Generating static pages (5/5)[?25h
+[?25l [37m[1m [m Finalizing page optimization  [36m. [37m[1m [m Collecting build traces  [36m.[m[K[182C [37m[1m [m Collecting build traces  [36m..[K[152C[m[K[182C [37m[1m [m Collecting build traces  [36m...[K[151C[m[K[182C [37m[1m [m Collecting build traces  [36m.[K[153C[m[K[182C [37m[1m [m Collecting build traces  [36m..[K[152C[m[K[182C [37m[1m [m Collecting build traces  [36m...[K[151C[m[K[182C [37m[1m [m Collecting build traces  [36m.[K[153C[m[K[182C [37m[1m [m Collecting build traces  [36m..[K[152C[m[K[182C [37m[1m [m Collecting build traces  [36m...[K[151C[m[K[182C [32m[1m✓[m Collecting build traces    [?25h
+ [32m[1m✓[m Finalizing page optimization[K
+
+[4mRoute (app)[24m[30X[4m[30CSize[24m     [4mFirst Load JS[24m[K
+┌ ○ /                                    2.62 kB[37m[1m[9C101 kB[m[K
+├ ○ /_not-found                          873 B[37m[1m[12C88 kB[m[K
+└ ƒ /produto/[id]                        12.3 kB[37m[1m[9C111 kB[m[K
++ First Load JS shared by all[37m[1m[12C87.1 kB[m[K
+  ├ chunks/117-6af164870664d7c1.js       31.6 kB
+  ├ chunks/fd9d1056-ddeb34597077fc1d.js  53.6 kB
+  └ other shared chunks (total)          1.89 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+[K[?9001l[?1004l
