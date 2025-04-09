@@ -69,6 +69,7 @@ Reutilização de Componentes: Componentes de UI reutilizáveis para consistênc
 Boas Práticas: Uso de TypeScript, ESLint e Prettier para garantir qualidade no código.
 Foco em Performance: Otimização de imagens e carregamento eficiente de dados.
 
-# Este projeto foi desenvolvido com foco em boas práticas de desenvolvimento e escalabilidade. Ele demonstra habilidades em frontend, backend e integração de sistemas, sendo uma excelente vitrine para recrutadores interessados em profissionais com experiência em desenvolvimento full-stack.
+## Conclusão
+Este projeto foi desenvolvido com foco em boas práticas de desenvolvimento e escalabilidade. Ele demonstra habilidades em frontend, backend e integração de sistemas, sendo uma excelente vitrine para recrutadores interessados em profissionais com experiência em desenvolvimento full-stack.
 
-# Desenvolvido por: [@TavinHVM](https://github.com/TavinHVM) e [@GabrielSL1](https://github.com/GabrielSL1).
+Desenvolvido por: [@TavinHVM](https://github.com/TavinHVM) e [@GabrielSL1](https://github.com/GabrielSL1).
