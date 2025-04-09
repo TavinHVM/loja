@@ -50,17 +50,17 @@ Este projeto é uma aplicação completa de e-commerce desenvolvida com tecnolog
    git clone https://github.com/seu-usuario/seu-repositorio.git
    cd seu-repositorio
 
-2. Instale as dependências:
+2. Instale as dependências: <br />
 npm install
 
 3. Configure as variáveis de ambiente:
 Crie um arquivo .env no diretório do backend e configure as credenciais do banco de dados.
 
-4. Inicie o backend e o frontend:
-cd essencial/gyntech/
+4. Inicie o backend e o frontend: <br />
+cd essencial/gyntech/ <br />
 npm run dev
 
-5. Acesse a aplicação:
+5. Acesse a aplicação: <br />
 http://localhost:3000
 
 ## Diferenciais do Projeto
