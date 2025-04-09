@@ -1,16 +1,24 @@
-import Logo from '../shared/Logo'
-import IconeCarrinho from '../shared/IconeCarrinho'
-import Link from 'next/link'
+import Logo from "../shared/Logo";
+import IconeCarrinho from "../shared/IconeCarrinho";
+import Link from "next/link";
 
 export default function Cabecalho() {
     return (
         <div
-            className="flex flex-col h-20"
+            className="flex flex-col h-16 top-0 left-0 w-full z-50"
             style={{
-                background: 'linear-gradient(90deg, #14002D 0%,rgb(0, 0, 0) 50%, #14002D 100%)',
+                background: "linear-gradient(to top, #000000, #141414)",
+                margin: 0,
+                width: "100vw",
+                height: "120px",
             }}
         >
-            <div className="flex-1 container flex flex-col justify-center">
+            <div
+                className="flex-1 container flex flex-col justify-center"
+                style={{
+                    padding: "20px 20px 10px 20px",
+                }}
+            >
                 <div className="flex justify-between items-center">
                     <Logo />
                     <Link href="">
@@ -18,7 +26,7 @@ export default function Cabecalho() {
                     </Link>
                 </div>
             </div>
-            <div className="h-px bg-gradient-to-r from-violet-600/20 via-violet-600/80 to-violet-600/20"></div>
+            <div className="h-px bg-gradient-to-r from-neutral-800 via-neutral-500 to-neutral-800"></div>
         </div>
-    )
+    );
 }

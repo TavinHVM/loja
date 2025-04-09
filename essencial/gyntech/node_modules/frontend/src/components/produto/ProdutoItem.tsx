@@ -12,7 +12,7 @@ export interface ProdutoItemProps{
 export default function ProdutoItem(props: ProdutoItemProps) {
     const {produto} = props
     return <Link href={`/produto/${produto.id}`} 
-                className='flex flex-col bg-violet-dark border border-white/10 rounded-xl relative max-w-[350px]'>
+                className='flex flex-col bg-black-dark border border-white/10 rounded-xl relative max-w-[350px]'>
                 
                 <div className="absolute flex justify-end top-2.5 right-2.5">
                     <NotaReview nota={produto.nota} />
@@ -26,7 +26,7 @@ export default function ProdutoItem(props: ProdutoItemProps) {
                         fill
                     />
                 </div>
-                <div className='flex-1 flex flex-col p-5 gap-3 border-t border-white/10'>
+                <div className='flex-1 flex flex-col p-5 gap-3 border-t border-gray-800'>
                     <span className='text-lg font-semibold'>{props.produto.nome}</span>
                     <span className='text-sm border-b border-dashed self-start'>
                         {produto.especificacoes.destaque}
