@@ -1,4 +1,4 @@
-# Loja Virtual - GynTech
+# 🏪Loja Virtual - GynTech
 
 Este projeto é uma aplicação completa de e-commerce desenvolvida com tecnologias modernas e escaláveis. Ele foi projetado para oferecer uma experiência de compra intuitiva e eficiente, tanto para os usuários finais quanto para os administradores da loja.
 
